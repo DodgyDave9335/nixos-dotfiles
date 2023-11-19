@@ -3,7 +3,7 @@
   imports = [ 
     ./1password
     ./libreoffice
-    ./browsing
+    ./browsers
     ./vscode
   ];
   home-manager.users.${username} = { pkgs, ... }: {
