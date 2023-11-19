@@ -1,8 +1,15 @@
 { pkgs, ... }:
 {
-  # Bootloader.
   boot.loader = {
-    systemd-boot.enable = true;
-    efi.canTouchEfiVariables = true;
+  systemd-boot.enable = false;
+   efi = {
+    canTouchEfiVariables  = true;
+    efiSysMountPoint      = "/boot";
+   };
+   grub = {
+    enable     = true;
+    devices    = [ "nodev" ];
+    efiSupport = true;
+   };
   };
 }
