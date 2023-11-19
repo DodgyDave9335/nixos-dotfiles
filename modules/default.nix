@@ -2,7 +2,7 @@
   imports = [
     ./agenix
     ./apps
-    ./boot/grub
+    ./boot
     ./core
     ./hardware
     ./hyprland
