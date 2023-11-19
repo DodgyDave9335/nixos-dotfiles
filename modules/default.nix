@@ -2,10 +2,10 @@
   imports = [
     ./agenix
     ./apps
-    ./boot/systemd
+    ./boot/grub
     ./core
     ./hardware
     ./hyprland
-    ./network
+    ./steam
   ];
 }
