@@ -8,7 +8,6 @@
     ./kitty
     ./nvim
     ./starship
-    ./tmux
    ];
 
    # ---- Home Configuration ----
