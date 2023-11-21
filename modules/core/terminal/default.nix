@@ -4,8 +4,7 @@
     ./bash
     ./cava
     ./fonts
-    ./foot
-    ./kitty
+    ./alacritty
     ./nvim
     ./starship
    ];
@@ -17,15 +16,12 @@
    };
 
    # ---- System Configuration ----
-   programs = {
-     htop.enable = true;
-     mtr.enable = true;  
-   };
 
    environment.systemPackages = with pkgs; [
-     alacritty # backup terminal
+     alacritty
      btop
      nitch
+     neofetch
      vim
    ];
 }
