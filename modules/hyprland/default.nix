@@ -9,7 +9,6 @@ in
   imports = [
     hyprland.nixosModules.default
     ./config
-    ./greetd
     ./mako
     ./waybar
     ./wofi
