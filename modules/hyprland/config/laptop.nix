@@ -1,20 +1,15 @@
 { home-manager, username, ... }:
 {
-  home-manager.users.${username} =  { ... }: {
-    home.file = {
-      ".config/hypr/hyprpaper.conf".text = ''
-preload = ~/.config/backgrounds/232136.png
-preload = ~/.config/backgrounds/1A1C23.png
-wallpaper = DP-1, ~/.config/backgrounds/232136.png
-      '';  
+home-manager.users.${username} =  { ... }: {
+  home.file = {
 
-      ".config/hypr/hyprland.conf".text = ''
+".config/hypr/hyprland.conf".text = ''
 
 # monitor
 monitor = DP-1,3840x1600@160,0x0,1
 
 # autostart
-exec-once = swww init && swww img 
+exec-once = swww init && swww img ~/.config/backgrounds/sunset-train.jpg 
 exec-once = waybar
 exec-once = mako
 exec-once = lxqt-policykit-agent
