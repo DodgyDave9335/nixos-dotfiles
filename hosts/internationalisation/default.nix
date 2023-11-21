@@ -1,12 +1,8 @@
 {
   # Set your time zone.
-  time.timeZone = "America/Toronto";
+  time.timeZone = "Europe/London";
 
   # Select internationalisation properties.
-  i18n.defaultLocale = "en_CA.UTF-8";
-    
-  services.xserver = {
-    layout = "us";
-    xkbVariant = "";
-  };
+  i18n.defaultLocale = "en_GB.UTF-8";
+  console.keyMap = "uk";
 }
