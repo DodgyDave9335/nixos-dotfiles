@@ -18,14 +18,11 @@ in
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
   
   environment.systemPackages = with pkgs; [ 
-    eww-wayland
-    grim
-    hyprpaper
-    hyprpicker
+    swww
     lxqt.lxqt-policykit
+    grim
     slurp
     wl-clipboard
-    # Required if applications are having trouble opening links
     xdg-utils
   ];
   
@@ -33,16 +30,6 @@ in
 
   programs.dconf.enable = true;
   
-  services.gnome = {
-    gnome-keyring.enable = true;
-  };
-
-  security = {
-    pam = {
-      services = {
-        login.enableGnomeKeyring = true;
-      };
-    };
   };
 }
 
