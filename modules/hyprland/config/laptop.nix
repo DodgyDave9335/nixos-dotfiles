@@ -106,7 +106,7 @@ bind = $mainMod SHIFT, 	J, 		togglesplit, 	# dwindle
 bind = $mainMod SHIFT,	Print,	exec,	grim -g "$(slurp)"
 bind = $mainMod,	Print,	exec,	grim
 bind = $mainMod,	Return,	exec,	alacritty
-bind = $mainMod,	Z,	exec,	wofi
+bind = $mainMod,	Z,	exec,	wofi --show drun
 
 # Move focus with mainMod + arrow keys
 bind = $mainMod, left, 	movefocus, l
