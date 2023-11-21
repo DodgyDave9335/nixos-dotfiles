@@ -17,6 +17,9 @@
           
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
+
+  # Manually set the hostname
+  networking.hostName = "hellmachine";
    
   # Dont change.
   system.stateVersion = "23.05"; # Did you read the comment?
