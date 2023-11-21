@@ -7,7 +7,7 @@
 font=M+1Code Nerd Font
 format=<b>%a ⏵</b> %s\n%b
 sort=-time
-output=DP-2
+output=DP-1
 layer=overlay
 anchor=top-center
 background-color=#221A3B
