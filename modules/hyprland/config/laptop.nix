@@ -14,7 +14,11 @@ wallpaper = DP-1, ~/.config/backgrounds/232136.png
 monitor = DP-1,3840x1600@160,0x0,1
 
 # autostart
-exec-once = hyprpaper & waybar & mako & lxqt-policykit-agent & dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
+exec-once = swww init && swww img 
+exec-once = waybar
+exec-once = mako
+exec-once = lxqt-policykit-agent
+exec-once = dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
 
 # some default env vars.
 env = XCURSOR_SIZE,24
