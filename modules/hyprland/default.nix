@@ -11,7 +11,6 @@ in
     ./config
     ./greetd
     ./mako
-    ./swaylock
     ./waybar
     ./wofi
   ] ++ (hyprNvidia.${nvidia_bool} or [ ]);
