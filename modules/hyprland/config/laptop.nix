@@ -25,7 +25,7 @@ env = QT_QPA_PLATFORM,wayland
 
 # general
 input {
-	kb_layout = uk
+	kb_layout = gb
 }
 
 general {
