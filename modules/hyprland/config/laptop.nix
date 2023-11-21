@@ -90,9 +90,8 @@ device:epic-mouse-v1 {
 
 misc {
 	disable_hyprland_logo	 = true
-  	disable_splash_rendering =true
-	mouse_move_enables_dpms	 =true
-	background_color	 = 0x232136
+  	disable_splash_rendering = true
+	mouse_move_enables_dpms	 = true
 }
 
 #keybinds
@@ -107,7 +106,7 @@ bind = $mainMod SHIFT, 	J, 		togglesplit, 	# dwindle
 bind = $mainMod SHIFT,	Print,	exec,	grim -g "$(slurp)"
 bind = $mainMod,	Print,	exec,	grim
 bind = $mainMod,	Return,	exec,	alacritty
-bind = $mainMod,	Z,	exec,	~/.config/rofi/launchers/type-1/launcher.sh
+bind = $mainMod,	Z,	exec,	wofi
 
 # Move focus with mainMod + arrow keys
 bind = $mainMod, left, 	movefocus, l
