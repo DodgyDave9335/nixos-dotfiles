@@ -93,7 +93,7 @@ read -r -d '' NEW_CONFIG << EOM
           specialArgs = {
             username = "$username";
             hostname = "$hostname";
-            displayConfig = "laptop";
+            displayConfig = "desktop";
             nvidia_bool = "$nvidia";
           } // attrs;        
           modules = [
