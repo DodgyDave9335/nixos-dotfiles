@@ -3,6 +3,7 @@
   home-manager.users.${username} =  { ... }: {
     home.file = {
       ".config/alacritty/alacritty.yml".text = ''
+
 # Configuration for Alacritty, the GPU enhanced terminal emulator.
 
 # Import additional configuration files
@@ -958,7 +959,8 @@
   #print_events: false
 
   # Highlight window damage information.
-  #highlight_damage: false# 
+  #highlight_damage: false#
+
       '';     
     };
   };
