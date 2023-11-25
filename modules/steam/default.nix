@@ -1,7 +1,8 @@
 { pkgs, username, ... }:
 {  
   users.users.${username} = {
-    packages = with pkgs; [ 
+    packages = with pkgs; [
+      discord
     ];
   };
 
