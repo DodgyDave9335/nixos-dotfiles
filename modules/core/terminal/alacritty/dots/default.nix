@@ -14,8 +14,12 @@
 #
 # All imports must either be absolute paths starting with `/`, or paths relative
 # to the user's home directory starting with `~/`.
-#import:
-#  - /path/to/alacritty.yml
+import:
+  # uncomment the flavour you want below:
+#  - /etc/nixos/modules/core/terminal/alacritty/dots/catppuccin-mocha.yml
+#  - /etc/nixos/modules/core/terminal/alacritty/dots/catppuccin-macchiato.yml
+#  - /etc/nixos/modules/core/terminal/alacritty/dots/catppuccin-frappe.yml
+#  - /etc/nixos/modules/core/terminal/alacritty/dots/catppuccin-latte.yml
 
 # Any items in the `env` entry below will be added as
 # environment variables. Some entries may override variables
