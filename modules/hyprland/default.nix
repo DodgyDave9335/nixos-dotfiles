@@ -9,7 +9,6 @@ in
   imports = [
     hyprland.nixosModules.default
     ./config
-    ./mako
     ./waybar
     ./rofi
   ] ++ (hyprNvidia.${nvidia_bool} or [ ]);
@@ -19,7 +18,6 @@ in
   
   environment.systemPackages = with pkgs; [ 
     swww
-    lxqt.lxqt-policykit
     grim
     slurp
     wl-clipboard
@@ -28,6 +26,5 @@ in
   
   programs.hyprland.enable = true;
 
-  programs.dconf.enable = true;
 }
 
