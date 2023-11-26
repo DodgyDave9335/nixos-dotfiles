@@ -1,8 +1,6 @@
-{ pkgs, ... }:
-let
-  corePackages = import ./core { inherit  pkgs; };
-  devPackages = import ./dev { inherit pkgs; };
-in 
+{pkgs, ...}:
 {
-  environment.systemPackages = corePackages ++ devPackages;
+  environment.systemPackages = with pkgs; [
+    ranger
+  ];
 }
