@@ -95,7 +95,6 @@ misc {
 $mainMod = SUPER
 
 # Example binds, see https://wiki.hyprland.org/Configuring/Binds/ for more
-bind = $mainMod,	F,		fullscreen,
 bind = $mainMod SHIFT, 	Q, 		killactive, 
 bind = $mainMod SHIFT, 	E, 		exit,
 bind = $mainMod SHIFT,	F,		fullscreen,
@@ -106,6 +105,7 @@ bind = $mainMod SHIFT,	Print,	exec,	grim -g "$(slurp)"
 bind = $mainMod,	Print,	exec,	grim
 bind = $mainMod,	Return,	exec,	alacritty
 bind = $mainMod,	Z,	exec,	rofi -show "drun"
+bind = $mainMod,	A,	exec,	hyprctl dispatch toggleopaque
 
 # Move focus with mainMod + arrow keys
 bind = $mainMod, left, 	movefocus, l
