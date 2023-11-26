@@ -11,7 +11,7 @@ in
     ./config
     ./mako
     ./waybar
-    ./wofi
+    ./rofi
   ] ++ (hyprNvidia.${nvidia_bool} or [ ]);
   
   environment.sessionVariables.WLR_NO_HARDWARE_CURSORS = "1";
