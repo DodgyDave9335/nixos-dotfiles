@@ -95,11 +95,13 @@ misc {
 $mainMod = SUPER
 
 # Example binds, see https://wiki.hyprland.org/Configuring/Binds/ for more
+bind = $mainMod,	F,		fullscreen,
 bind = $mainMod SHIFT, 	Q, 		killactive, 
 bind = $mainMod SHIFT, 	E, 		exit,
+bind = $mainMod SHIFT,	F,		fullscreen,
 bind = $mainMod SHIFT, 	F, 		togglefloating, 
-bind = $mainMod SHIFT, 	P, 		pseudo, 	# dwindle
-bind = $mainMod SHIFT, 	J, 		togglesplit, 	# dwindle
+bind = $mainMod SHIFT, 	P, 		pseudo,
+bind = $mainMod SHIFT, 	J, 		togglesplit,
 bind = $mainMod SHIFT,	Print,	exec,	grim -g "$(slurp)"
 bind = $mainMod,	Print,	exec,	grim
 bind = $mainMod,	Return,	exec,	alacritty
