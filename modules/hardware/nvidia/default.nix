@@ -18,12 +18,10 @@
 
   hardware.nvidia = {
     modesetting.enable = true;
-    powerManagement.enable = false;
-    powerManagement.finegrained = false;
     open = true;
-    nvidiaSettings = true;
+    nvidiaSettings = false;
     # Video card specific - stable supports "newer" cards
-    package = config.boot.kernelPackages.nvidiaPackages.production;
+    package = config.boot.kernelPackages.nvidiaPackages.stable;
   };
   
   users.users.${username} = {
