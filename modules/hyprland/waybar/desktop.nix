@@ -18,7 +18,7 @@
     // Modules configuration
 
     "clock": {
-    "format": "󱑍   {:%I:%M %p  %A %d. %B %Y}",
+    "format": "󱑍 {:%I:%M %p  %A %d/%m/%Y}",
     "tooltip": "false",
     },
 
@@ -68,8 +68,7 @@
 * {
     border: none;
     border-radius: 0px;
-    /*font-family: VictorMono, Iosevka Nerd Font, Noto Sans CJK;*/
-    font-family: Iosevka, FontAwesome, Noto Sans CJK;
+    font-family: Jetbrains Mono Nerd Font;
     font-size: 17px;
     font-style: normal;
     min-height: 0;
