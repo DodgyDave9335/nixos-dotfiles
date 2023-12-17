@@ -51,9 +51,6 @@
 	"format-icons": {
 	"default": ["󰕿", "󰖀", "󰕾"]
 	},
-    "on-click": "bash ~/.scripts/volume mute",
-    "on-scroll-up": "bash ~/.scripts/volume up",
-    "on-scroll-down": "bash ~/.scripts/volume down",
     "scroll-step": 5,
     },
 
