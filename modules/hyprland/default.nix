@@ -1,10 +1,10 @@
 { hyprland, pkgs, nvidia_bool, username, ... }:
-let
-  hyprNvidia = {
-    "enabled" = [ (import ./nvidia.nix) ];
-    "disabled" = [ ];
-    };
-in
+#let
+#  hyprNvidia = {
+#    "enabled" = [ (import ./nvidia.nix) ];
+#    "disabled" = [ ];
+#    };
+#in
 {
   imports = [
     hyprland.nixosModules.default
