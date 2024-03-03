@@ -21,7 +21,7 @@
     open = true;
     nvidiaSettings = false;
     # Video card specific - stable supports "newer" cards
-    package = config.boot.kernelPackages.nvidiaPackages.stable;
+    package = config.boot.kernelPackages.nvidiaPackages.beta;
   };
   
   users.users.${username} = {
