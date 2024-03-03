@@ -9,7 +9,7 @@ home-manager.users.${username} =  { ... }: {
 monitor = DP-1,3840x1600@160,0x0,1
 
 # autostart
-exec-once = swww init && swww img ~/.config/backgrounds/nix-wallpaper-dracula.jpg 
+exec-once = swww init && swww img ~/.config/backgrounds/wall1.jpg 
 exec-once = waybar
 exec-once = dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
 
