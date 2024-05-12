@@ -33,7 +33,6 @@ general {
 	col.active_border	= rgba(0D599Fee) rgba(ffffffee) 45deg
 	col.inactive_border	= rgba(595959aa)
 	layout			= dwindle
-	no_cursor_warps		= yes
 	resize_on_border	= yes
 	hover_icon_on_border	= yes
 }
@@ -75,14 +74,6 @@ dwindle {
 
 master {
 	new_is_master = true
-}
-
-gestures {
-	workspace_swipe = off
-}
-
-device:epic-mouse-v1 {
-	sensitivity = -0.5
 }
 
 misc {
