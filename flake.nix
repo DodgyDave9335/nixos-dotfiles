@@ -36,4 +36,4 @@
       description = "The default template for this flake";
     };#templates
  };
-}
+};
