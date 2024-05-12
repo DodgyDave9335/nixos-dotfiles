@@ -12,7 +12,7 @@
     hyprland = {
       url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
     };
-
+  };
   outputs = { self, nixpkgs, ... } @ attrs: { 
 
     nixosConfigurations = { 
@@ -35,7 +35,5 @@
       path = ./.;
       description = "The default template for this flake";
     };#templates
-   
-  };
  };
 }
