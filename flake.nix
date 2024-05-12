@@ -10,59 +10,24 @@
     };
 
     hyprland = {
-      url = "github:hyprwm/hyprland";
+      url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
     };
-    
-    eriixvim = {
-      url = "github:erictossell/eriixvim";
-    };
-  };
-  
+
   outputs = { self, nixpkgs, ... } @ attrs: { 
 
     nixosConfigurations = { 
- 
-      principium = nixpkgs.lib.nixosSystem {
-        system = "x86_64-linux";
-        specialArgs = {
-          username = "eriim";
-          hostname = "principium";
-          displayConfig = "desktop";
-          nvidia_bool = "enabled";
-        } // attrs;        
+       hellmachine = nixpkgs.lib.nixosSystem {
+          system = "x86_64-linux";
+          specialArgs = {
+            username = "mashiro";
+            hostname = "hellmachine";
+            displayConfig = "desktop";
+            nvidia_bool = "enabled";
+        } // attrs;
         modules = [
           ./.
-          ./modules/obs
-          ./modules/toys
-          ./modules/virt
         ];
-      };#principium
-
-      sisyphus = nixpkgs.lib.nixosSystem {
-        system = "x86_64-linux";
-        specialArgs = {
-          username = "eriim";
-          hostname = "sisyphus";
-          displayConfig = "laptop";
-          nvidia_bool = "disabled";
-        } // attrs;        
-        modules = [
-            ./.
-        ];
-      };#sisyphus
-
-      live-image = nixpkgs.lib.nixosSystem {
-        system = "x86_64-linux";
-        specialArgs = {
-          username = "nixos";
-          hostname = "live-image";
-          displayConfig = "laptop";
-          nvidia_bool = "disabled";
-          } // attrs;
-          modules = [
-            ./minimal.nix
-          ];
-      };#live-image
+      };#hellmachine
 
     };#configurations
 
